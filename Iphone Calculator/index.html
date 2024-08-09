@@ -9,31 +9,34 @@
       href="https://cdn3d.iconscout.com/3d/free/thumb/free-ios-calculator-2978357-2476734.png"
     />
     <title>Iphone Calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
+      <input id="display" />
       <div id="keys">
-        <button onclick="display('AC')">AC</button>
-        <button onclick="display('+/-')">+/-</button>
-        <button onclick="display('%')">%</button>
-        <button onclick="display('/')">÷</button>
-        <button onclick="display('7')">7</button>
-        <button onclick="display('8')">8</button>
-        <button onclick="display('9')">9</button>
-        <button onclick="display('*')">x</button>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('5')">5</button>
-        <button onclick="display('6')">6</button>
-        <button onclick="display('-')">-</button>
-        <button onclick="display('1')">1</button>
-        <button onclick="display('2')">2</button>
-        <button onclick="display('3')">3</button>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('+')">+</button>
-        <button onclick="display('0')">0</button>
-        <button onclick="display('.')">.</button>
-        <button onclick="display('=')">=</button>
+        <button onclick="clearDisplay('AC')" class="operator-btn">AC</button>
+        <button onclick="addToDisplay('+/-')" class="operator-btn">+/-</button>
+        <button onclick="addToDisplay('%')" class="operator-btn">%</button>
+        <button onclick="addToDisplay('/')" class="operator">÷</button>
+        <button onclick="addToDisplay('7')">7</button>
+        <button onclick="addToDisplay('8')">8</button>
+        <button onclick="addToDisplay('9')">9</button>
+        <button onclick="addToDisplay('*')" class="operator">x</button>
+        <button onclick="addToDisplay('4')">4</button>
+        <button onclick="addToDisplay('5')">5</button>
+        <button onclick="addToDisplay('6')">6</button>
+        <button onclick="addToDisplay('-')" class="operator">-</button>
+        <button onclick="addToDisplay('1')">1</button>
+        <button onclick="addToDisplay('2')">2</button>
+        <button onclick="addToDisplay('3')">3</button>
+        <button onclick="addToDisplay('+')" class="operator">+</button>
+        <button onclick="addToDisplay('0')" class="zero">0</button>
+        <button onclick="addToDisplay('.')">.</button>
+        <button onclick="calculate('=')" class="operator">=</button>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
