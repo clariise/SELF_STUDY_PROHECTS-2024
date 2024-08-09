@@ -45,6 +45,13 @@ button {
   color: white;
 }
 
+button.zero {
+  width: 220px;
+  justify-content: flex-start;
+  padding: 25px;
+  grid-column: 1 / span 2;
+}
+
 .operator {
   background-color: orange;
 }
